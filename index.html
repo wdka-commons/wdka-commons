@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WDKA Commons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="site-title">WDKA Commons</div>
+</header>
+
+<div class="open-call">
+  <div class="open-call-label">[OPEN CALL]</div>
+  <div class="open-call-text">Contribute resources, life hacks, useful websites, and knowledge for students</div>
+</div>
+
+<div class="intro">
+  <p>
+    A collective knowledge base for WDKA art students. Messy, evolving, and built by students, for students. 
+    The pad is where knowledge is written together. This website is where it becomes readable and public.
+  </p>
+</div>
+
+<div id="resources" class="section-header">Resources</div>
+
+<div class="categories">
+  <div class="category" onclick="toggleCategory(this)">
+    <div class="category-title">Art Materials</div>
+    <div class="category-desc">Affordable suppliers, reuse spots, student discounts</div>
+      <div class="category-content" data-src="assets/resources/art-materials.html">
+        <p>Loading…</p>
+      </div>
+  </div>
+  
+  <div class="category" onclick="toggleCategory(this)">
+    <div class="category-title">Free Websites & Tools</div>
+    <div class="category-desc">Portfolio builders, project websites, online tools</div>
+      <div class="category-content" data-src="assets/resources/free-websites.html">
+        <p>Loading…</p>
+      </div>
+    </div>
+  
+  <div class="category" onclick="toggleCategory(this)">
+    <div class="category-title">Shadow Libraries</div>
+    <div class="category-desc">Alternative access to academic and cultural knowledge</div>
+      <div class="category-content" data-src="assets/resources/shadow-libraries.html">
+        <p>Loading…</p>
+      </div>
+  </div>
+  
+  <div class="category" onclick="toggleCategory(this)">
+    <div class="category-title">Grants & Funding</div>
+    <div class="category-desc">Open calls, grants, stipends, financial support</div>
+      <div class="category-content" data-src="assets/resources/Grants-and-funding.html">
+        <p>Loading…</p>
+      </div>
+  </div>
+  
+  <div class="category" onclick="toggleCategory(this)">
+    <div class="category-title">Community & Networks</div>
+    <div class="category-desc">Spaces, groups, initiatives around WDKA and Rotterdam</div>
+      <div class="category-content" data-src="assets/resources/community-and-networks.html">
+        <p>Loading…</p>
+      </div>
+  </div>
+  
+  <div class="category" onclick="window.open('https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4', '_blank')">
+    <div class="category-title">View All in Pad →</div>
+    <div class="category-desc">Browse and contribute to the full resource list</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+
+<div id="contribute" class="section-header">Contribute</div>
+<div class="intro">
+  <p>
+    All contributions happen in the shared pad. Add resources, fix links, improve descriptions, or suggest new categories.
+  </p>
+  <a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4" class="pad-link" target="_blank">Open Contribution Pad</a>
+</div>
+
+
+</body>
+</html>
