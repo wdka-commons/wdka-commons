@@ -16,8 +16,26 @@
     a { color: black; }
     ul { padding-left: 1.2rem; }
     .meta { opacity: 0.7; font-size: 0.9em; }
-    .nav { margin: 2rem 0; }
-    .nav li { margin-bottom: 0.3rem; }
+
+    /* Browse grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 3rem 0;
+    }
+
+    .card {
+      display: block;
+      padding: 1rem;
+      border: 1px solid #000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card:hover {
+      background: #f5f5f5;
+    }
   </style>
 </head>
 
@@ -40,13 +58,14 @@ This website is where it becomes readable and public.
 </p>
 
 <h2>Browse resources</h2>
-<ul class="nav">
-  <li><a href="#materials">Art Materials</a></li>
-  <li><a href="#websites">Free Websites & Tools</a></li>
-  <li><a href="#shadow">Shadow Libraries</a></li>
-  <li><a href="#funding">Grants & Funding</a></li>
-  <li><a href="#community">Community & Networks</a></li>
-</ul>
+
+<div class="grid">
+  <a href="#materials" class="card">Art Materials</a>
+  <a href="#websites" class="card">Free Websites & Tools</a>
+  <a href="#shadow" class="card">Shadow Libraries</a>
+  <a href="#funding" class="card">Grants & Funding</a>
+  <a href="#community" class="card">Community & Networks</a>
+</div>
 
 <h2 id="materials">Art Materials</h2>
 <p>
