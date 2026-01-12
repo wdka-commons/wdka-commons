@@ -3,11 +3,17 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      padding: 2rem;
-      line-height: 1.4;
-    }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 1rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+}
     header {
       margin-bottom: 2rem;
     }
@@ -15,22 +21,35 @@
       font-size: 2rem;
       font-weight: bold;
     }
-    .open-call {
-      background: #ff69b4;
-      padding: 0.75rem 1rem;
-      margin: 1rem 0;
-      border: 1px solid #000;
-    }
+.open-call {
+  background: #ff69b4;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid #000;
+}
+
+@media (min-width: 768px) {
+  .open-call {
+    padding: 1rem 1.25rem;
+  }
+}
     .open-call-label {
       font-weight: bold;
       font-size: 1rem;
       margin-bottom: 0.5rem;
     }
-    .open-call-text {
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 2;
-    }
+.open-call-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.15;
+  max-width: 20ch;
+}
+
+@media (min-width: 1024px) {
+  .open-call-text {
+    line-height: 1.25;
+  }
+}
     nav {
       border-top: 2px solid #000;
       border-bottom: 2px solid #000;
@@ -48,13 +67,19 @@
     nav a:hover {
       text-decoration: underline;
     }
-    .section-header {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 3rem 0 1.5rem 0;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid #000;
-    }
+.section-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #000;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    margin: 3rem 0 1.5rem 0;
+  }
+}
     .categories {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -118,11 +143,17 @@
       line-height: 1.5;
       opacity: 0.8;
     }
-    .intro {
-      max-width: 800px;
-      margin: 2rem 0;
-      font-size: 1.05rem;
-    }
+.intro {
+  max-width: 800px;
+  margin: 1.25rem 0;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin: 2rem 0;
+  }
+}
     .meta {
       opacity: 0.7;
       font-size: 0.95em;
