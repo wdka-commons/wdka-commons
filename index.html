@@ -5,115 +5,172 @@
   <title>WDKA Commons</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: system-ui, sans-serif;
-      max-width: 900px;
-      margin: auto;
+      font-family: system-ui, -apple-system, sans-serif;
       padding: 2rem;
-      line-height: 1.5;
+      line-height: 1.4;
     }
-    h1, h2 { margin-top: 2rem; }
-    a { color: black; }
-    ul { padding-left: 1.2rem; }
-    .meta { opacity: 0.7; font-size: 0.9em; }
-
-    /* Browse grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin: 1.5rem 0 3rem 0;
+    header {
+      margin-bottom: 3rem;
     }
-
-    .card {
-      display: block;
-      padding: 1rem;
-      border: 1px solid #000;
+    .site-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      padding: 1rem 0;
+      margin: 2rem 0;
+      display: flex;
+      gap: 2rem;
+      font-size: 1.1rem;
+    }
+    nav a {
+      color: #000;
       text-decoration: none;
       font-weight: 500;
     }
-
-    .card:hover {
-      background: #f5f5f5;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section-header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 3rem 0 1.5rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #000;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 0;
+      margin: 2rem 0;
+      border: 2px solid #000;
+    }
+    .category {
+      border: 1px solid #000;
+      margin: -1px;
+      padding: 2rem 1.5rem;
+      background: #fff;
+      text-decoration: none;
+      color: #000;
+      display: block;
+    }
+    .category:hover {
+      background: #f0f0f0;
+    }
+    .category-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .category-desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+    .intro {
+      max-width: 800px;
+      margin: 2rem 0;
+      font-size: 1.05rem;
+    }
+    .meta {
+      opacity: 0.7;
+      font-size: 0.95em;
+      margin-top: 0.5rem;
+    }
+    .pad-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .pad-link:hover {
+      background: #333;
+    }
+    .notes {
+      max-width: 800px;
+      margin: 3rem 0;
+      padding: 1.5rem;
+      background: #f9f9f9;
+      border-left: 3px solid #000;
     }
   </style>
 </head>
-
 <body>
+<header>
+  <div class="site-title">WDKA Commons</div>
+  <p class="meta">A shared, student-maintained resource platform</p>
+</header>
 
-<h1>WDKA Commons</h1>
+<nav>
+  <a href="#resources">Resources</a>
+  <a href="#about">About</a>
+  <a href="#contribute">Contribute</a>
+</nav>
 
-<p>
-A shared, student-maintained resource platform for WDKA art students.
-</p>
-
-<p class="meta">
-Messy, evolving, collective. Built by students, for students.
-</p>
-
-<h2>What this is</h2>
-<p>
-The pad is where knowledge is written together.  
-This website is where it becomes readable and public.
-</p>
-
-<h2>Browse resources</h2>
-
-<div class="grid">
-  <a href="#materials" class="card">Art Materials</a>
-  <a href="#websites" class="card">Free Websites & Tools</a>
-  <a href="#shadow" class="card">Shadow Libraries</a>
-  <a href="#funding" class="card">Grants & Funding</a>
-  <a href="#community" class="card">Community & Networks</a>
+<div class="intro">
+  <p>
+    A collective knowledge base for WDKA art students. Messy, evolving, and built by students, for students. 
+    The pad is where knowledge is written together. This website is where it becomes readable and public.
+  </p>
 </div>
 
-<h2 id="materials">Art Materials</h2>
-<p>
-Affordable suppliers, reuse spots, student discounts, and alternatives.
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">View & contribute in the pad →</a>
-</p>
+<div id="resources" class="section-header">Resources</div>
 
-<h2 id="websites">Free Websites & Tools</h2>
-<p>
-Tools for building portfolios, project websites, and online presence.
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">View & contribute in the pad →</a>
-</p>
+<div class="categories">
+  <a href="#materials" class="category">
+    <div class="category-title">Art Materials</div>
+    <div class="category-desc">Affordable suppliers, reuse spots, student discounts</div>
+  </a>
+  
+  <a href="#websites" class="category">
+    <div class="category-title">Free Websites & Tools</div>
+    <div class="category-desc">Portfolio builders, project websites, online tools</div>
+  </a>
+  
+  <a href="#shadow" class="category">
+    <div class="category-title">Shadow Libraries</div>
+    <div class="category-desc">Alternative access to academic and cultural knowledge</div>
+  </a>
+  
+  <a href="#funding" class="category">
+    <div class="category-title">Grants & Funding</div>
+    <div class="category-desc">Open calls, grants, stipends, financial support</div>
+  </a>
+  
+  <a href="#community" class="category">
+    <div class="category-title">Community & Networks</div>
+    <div class="category-desc">Spaces, groups, initiatives around WDKA and Rotterdam</div>
+  </a>
+  
+  <a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4" class="category" target="_blank">
+    <div class="category-title">View All in Pad →</div>
+    <div class="category-desc">Browse and contribute to the full resource list</div>
+  </a>
+</div>
 
-<h2 id="shadow">Shadow Libraries</h2>
-<p>
-Alternative access to academic and cultural knowledge, with context.
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">View & contribute in the pad →</a>
-</p>
+<div id="contribute" class="section-header">Contribute</div>
+<div class="intro">
+  <p>
+    All contributions happen in the shared pad. Add resources, fix links, improve descriptions, or suggest new categories.
+  </p>
+  <a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4" class="pad-link" target="_blank">Open Contribution Pad</a>
+</div>
 
-<h2 id="funding">Grants & Funding</h2>
-<p>
-Open calls, grants, stipends, and financial support for students.
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">View & contribute in the pad →</a>
-</p>
-
-<h2 id="community">Community & Networks</h2>
-<p>
-Spaces, groups, initiatives, and informal networks around WDKA and Rotterdam.
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">View & contribute in the pad →</a>
-</p>
-
-<h2>Contribute</h2>
-<p>
-All contributions happen in the shared pad:
-<br>
-<a href="https://pad.xpub.nl/p/BVJiJVyyh42jrTolxaj4">Open contribution pad</a>
-</p>
-
-<h2>Notes</h2>
-<p>
-Some resources operate in legal grey zones.  
-They are listed to acknowledge existing practices of access and to provide context, not instruction.
-</p>
+<div class="notes">
+  <strong>Note:</strong> Some resources operate in legal grey zones. They are listed to acknowledge existing practices of access and to provide context, not instruction.
+</div>
 
 </body>
 </html>
